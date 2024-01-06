@@ -1,0 +1,444 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+    margin-top: 0%;
+  
+}
+
+header p{
+  	position: relative;
+  	text-align: center;
+  	font-family: sans-serif;
+ 	text-transform: uppercase;
+  	font-size: 3.5em;
+  	letter-spacing: 20px;
+  	overflow: hidden;
+  	background: linear-gradient(90deg,#FF99FF,#FF66FF,#FF00FF);
+  	background-repeat: no-repeat;
+  	background-size: 80%;
+  	animation: animate 3s linear infinite;
+  	-webkit-background-clip:text;
+  	-webkit-text-fill-color:rgba(255,255,255,0);
+}
+
+
+@keyframes animate{
+  0%{
+    background-position: -500%; 
+  }
+  100%{
+    background-position: 500%; 
+  }
+}
+
+body{
+  margin:0;
+  padding: 0;
+background-image: linear-gradient(to right,#ccffff,#99ffff)
+}
+
+.search{
+  float: right;
+}
+
+.search1 button img.img{
+  margin-top: 4%;
+}
+button{
+  cursor: pointer;
+}
+
+nav{
+  width: 100%;
+  float: left;
+  margin-top: 1%;
+  background-color: #00FFFF;
+  color: #FFFFFF;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+nav ul{
+  list-style: none;
+}
+nav ul li{
+  float: left;
+}
+nav ul li a{
+  text-decoration: none;
+  color:#000000;
+  margin-left: 3%;
+  display: block;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover,nav ul li a.active{
+    color: #FFFFFF;
+    background-color: #FF66FF; 
+    transition: 0.5s;
+ }
+
+.banner{
+  width: 100%;
+    margin-top: 7%;
+    background-color: #FF66FF;
+    color: #000;
+    line-height: 40px;
+    cursor: pointer;
+}
+.banner ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 15%;
+}
+.banner ul li+li:before{
+    padding: 0.25%;
+    color: #000;
+    content: "/\00a0";
+    position: relative;
+}
+.banner ul li a{
+    text-decoration: blink;
+    color: #000;
+}
+.banner ul li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer span .text{
+  font-style: oblique;
+  font-family: fantasy;
+  color: #000;
+  position: relative;
+  display: block;
+}
+
+.box{
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 2%;
+
+}
+
+section.home .body1 button, section.where .body1 button, section.components .body1 button, section.register .body1 button{
+  color: #270e62;
+  background-color: #00FFFF;
+  border: 4px #ffffff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+    body
+    {
+      background:  ;
+    }
+    .side, .middle
+    {
+      width: 20%;
+  }
+  .right
+  {
+      position: relative;
+  }
+}
+
+
+
+input[type="button"]:hover,.btndetail input[type="button"]:hover{   
+  background: #003366;
+    color: #fff;
+    opacity: 0.7;
+}
+.btndetail input[type="button"]{
+  width: 25%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    outline: none;
+    background: #60adde;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+}
+
+.span{
+  margin-left: 50px;
+color: #ffffff;
+}
+
+
+.footer
+{ background-color:#ffffff; margin-bottom: -18px;}
+
+section.home .body1 button, section.where .body1 button,
+ section.components .body1 button, section.register .body1 button{
+  color: white;
+  border-radius: 27px;
+  padding: 14px;
+  width: 120px;
+  background-color: #270e62;
+  margin: 30px;
+}
+
+section.home .banner{
+  width: 100%;
+  height: 300px;
+  animation-name: banner;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+background-color: #99ffff;
+ }
+
+@keyframes banner{
+  0%{background-image: url(../Images/1.jfif)}
+  15%{background-image: url(../Images/7.jfif)}
+  30%{background-image: url(../Images/2.jfif)}
+  55%{background-image: url(../Images/3.jfif)}
+  70%{background-image: url(../Images/4.jfif)}
+  85%{background-image: url(../Images/5.jfif)}
+  100%{background-image: url(../Images/6.jfif)
+  } 
+  
+footer{
+    clear: both;
+    width: auto;
+    height: auto;
+    background-color: #8cc0cf;
+    text-align: center;
+    font-weight: bold;
+    padding: 0%;
+    margin-top: 10%;
+}
+footer .footer{
+    font-weight: bold;
+    font-size: normal;
+    text-align: center;
+}
+footer .footer.SocialMedia img{
+    float: right;
+    cursor: pointer;
+}
+footer .searchbottom input[type=text]{
+  padding: 6px;
+    border: none;
+    margin-top: 8px;
+    font-size: 17px;
+}
+ footer.searchbottom input[type=text]{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    border: 1px solid #ccc;
+  }
+}
+footer .footerx  arch{
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+footer .footerbtnsearch:hover{
+    color: #fff;
+    background-color: #000;
+}
+h3{
+  font-size: 1.3em;
+  color: #000;
+  text-decoration: none;
+}
+footer span .text{
+  font-style: oblique;
+  font-family: fantasy;
+  color: #000;
+  position: relative;
+  display: block;
+}
+.zoom1{
+  transition: transform .2s;
+  margin: 0 auto;
+}
+.zoom1:hover
+{
+  transform: scale(1.2); 
+}
+.box{
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+.text{
+  color: #000;
+  font-family: cursive;
+  position: relative;
+  width: 100%;
+  word-spacing: 3px;
+  margin-top: 3%;
+}
+.text span{
+  color: #000;
+  font-family: fantasy;
+  position: relative;
+}
+.text i{
+  position: relative;
+  color: #000;
+  font-family: monospace;
+  font-style: oblique;
+  font-size: larger;
+  font-weight: 600;
+}
+
+section.about{
+  font-size: 1.2em;
+}
+section.about h1, section.where h1, section.components h1, section.blog h1, section.register h1{
+  font-family: fantasy;
+  font-weight: normal;
+  font-size: 2em;
+}
+section.about .img1{
+  width: 100%;
+}
+section.about .img2{
+  width: 120px;
+  height: 120px;
+}
+section.about .partners{
+  width: 100%;
+}
+section.about .partners td{
+  text-align: center;
+}
+
+section.register form{
+  margin: 0 10%; 
+}
+section.register .body1 input, section.register .body1 textarea{
+  border-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+section.register .body1 textarea{
+  width: 540px;
+}
+
+section.register .body1 button{
+  width: 280px;
+}
+
+
+section.where .body1 input, section.where .body1 textarea, 
+section.register .body1 input, section.register .body1 textarea{
+  padding: 9px;
+  width: 400px;
+  border: 2px solid #270e62;
+  border-radius: 27px;
+  color: black;
+  background-color: transparent;  
+  outline: none;
+  cursor: pointer;
+}
+/*section.home .body1 button, section.where .body1 button,
+ section.components .body1 button, section.register .body1 button{
+  color: white;
+  border-radius: 27px;
+  padding: 14px;
+  width: 120px;
+  /*background-color: #270e62;*/
+  margin: 30px;
+}*/
+
+.cc
+{
+  margin-left:150px; 
+  margin-right:150px;
+}
+
+marquee
+{
+  font-size:30px;
+  color:  #DD1538;
+  font-weight: bold;
+}
+
+.panel
+{
+  
+  background-color:white;
+  height: "600px";
+  border-style: dotted;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align:left;
+  width: 88.5%;
+  margin-left: 5%;
+  
+  opacity: 0.87;
+  color: black;
+  border-radius: 27px;
+}
+
+.form
+{
+  height: 600px;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 600px;   
+  background-color:#FFBC79; 
+}
+
+.heading1
+{
+  text-align:center;
+  font-family: hobo std;
+  color: #143D38;
+}
+
+
+
+section.Accommodation{
+  color:black;
+  position: relative;
+  left: 10%;
+  width: 80%;
+  background-color: rgba(255,255,255,0.1);
+}
+
+section.Accommodation .1new{
+  position: relative;
+  width: 90%;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  display: flex;
+}
+
+.blog
+{background-image: url(../Images/text.jpg);
+ color: purple;
+margin-top: 25px;}
+
+.activity
+{
+  height: 400px;
+  border-radius: 10px;
+  border: 0px solid black;
+  width: 600px;   
+  /*background-color:#FFBC79; */
+}
